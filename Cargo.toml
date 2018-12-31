@@ -1,0 +1,21 @@
+[package]
+edition = "2018"
+version = "0.1.0"
+name = "memoize-macro"
+description = "Attribute macro for memoizing functions using a map."
+
+repository = "https://github.com/cauebs/memoize-cache"
+authors = ["Cauê Baasch de Souza <cauebs@pm.me>"]
+license = "GPL-3.0+"
+readme = "README.md"
+
+keywords = ["macro", "cache"]
+categories = ["caching"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.23", features = ["full"] }
+quote = "0.6.10"
+proc-macro2 = "0.4.24"
